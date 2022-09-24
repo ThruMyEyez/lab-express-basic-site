@@ -6,9 +6,11 @@
     <title>Kai Ahmedi Art</title>
   </head>
   <body>
+    {{> navigation }}
     <h1>This page is dedicated to a close friend...</h1>
     <h2>Selfmade art from {{location.city}}, {{location.country}} by {{lastName}}</h2>
-    {{! navigation }}
+    <img src="{{image.src}}" alt="{{image.name}}" />
     {{! Some drawings here }}
+    {{> footer}}
   </body>
 </html>

@@ -1,3 +1,4 @@
+//fork
 const colors = require("colors");
 const hbs = require("hbs");
 const express = require("express"),
@@ -6,6 +7,7 @@ const express = require("express"),
 
 const { homeData, workData, galleryData, aboutData } = require("./src/data");
 
+app.use(express.static(__dirname + "/views/images"));
 hbs.registerPartials(__dirname + "/views/partials");
 
 app.set("view engine", "hbs");
@@ -26,7 +28,7 @@ app.get("/works", (request, response) => {
 //app.get("/gallery", (request, response) => {
 //  response.render("gallery");
 //});
-
+console.log(workData.title);
 app.listen(port, () => console.log(`${colors.yellow.underline("server listening to port: ")} ${port}`));
 
 /* create = app.post()

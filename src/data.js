@@ -7,24 +7,24 @@ const homeData = {
   age: 36,
   location: { country: "Germany", city: "Nürnberg" },
   profession: { role: "Artist", institution: "self" },
-  images: { image: "/views/images/cherrys.jpg", name: "", drawingType: "" },
+  image: { src: "/cherrys.jpg", name: "", drawingType: "" },
 };
 
-const workData = { test: "345", someArt: [{}, {}, {}] };
+const workData = { test: "345", title: "My artworks", someArt: [{}, {}, {}] };
 
 const galleryData = {
   images: [
-    { image: "/views/images/cherrys.jpg", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
-    { image: "", name: "", drawingType: "" },
+    { src: "/cherrys.jpg", name: "", drawingType: "Aquarelle" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
+    { src: "", name: "", drawingType: "" },
   ],
 };
 
