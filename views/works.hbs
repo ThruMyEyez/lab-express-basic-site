@@ -3,13 +3,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <title>{{title}}</title>
   </head>
+  
   <body>
-    {{!> navigation }}
-    <h2>My Workplace:</h2>
-    <h2>Some of my Techniques:</h2>
+
+    {{> navbar }}
+    
+    <!-- <div class="div-box">
+      <img src="{{image.src}}" alt="{{image.name}}" />
+      <div class="div-box-text">
+        <h2>{{image.heading}}</h2>
+        <p>{{image.contentText}}</p>
+      </div>
+    </div> -->
+    <article class="section" id="workspace">
+      <div class="heading container">
+        <h2>My workplace</h2>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+          <img src="{{workspace.src}}" alt="{{workspace.name}}" id="{{workspace.id}}" />
+        </div>
+        <div class="column right">
+          <h3>Where...</h3>
+          <p>Here I grow my skills in art, construction and drafting.
+            A lot of research in art takes place here. This is the place where I improve my art and drawing abilities. 
+            As usual when you want to improve your skills,
+            you have learn a lot of things, be self disciplined and patient.    
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+          <h3>Why...</h3>
+          <p>...because,</p>
+          <p>I love to make beautiful new things for no reason.</p>
+        </div>
+        <div class="column right">
+          <img src="{{_workspace.src}}" alt="{{_workspace.name}}" id="{{_workspace.id}}" />
+        </div>
+      </div>
+    </article>
+        <article class="section" id="workspace">
+      <div class="heading container">
+        <h2>My workplace</h2>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+          <img src="{{workspace.src}}" alt="{{workspace.name}}" id="{{workspace.id}}" />
+        </div>
+        <div class="column right">
+          <h3>Where...</h3>
+          <p>Here I grow my skills in art, construction and drafting.
+            A lot of research in art takes place here. This is the place where I improve my art and drawing abilities. 
+            As usual when you want to improve your skills,
+            you have learn a lot of things, be self disciplined and patient.    
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column left" >
+          <h3>Where...</h3>
+          <p>Here I grow my skills in art, construction and drafting.
+            A lot of research in art takes place here. This is the place where I improve my art and drawing abilities. 
+            As usual when you want to improve your skills,
+            you have learn a lot of things, be self disciplined and patient.    
+          </p>
+        </div>
+        <div class="column right">
+          <img src="{{workspace.src}}" alt="{{workspace.name}}" id="{{workspace.id}}" />
+        </div>
+      </div>
+    </article>
+
+      {{! erzählt was zu 2-3 bildern als favorite }}
+
+
     {{!> gallery }}
-    {{!> footer}}
+    
+    {{> footer}}
   </body>
+
 </html>

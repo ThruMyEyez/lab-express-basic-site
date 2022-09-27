@@ -3,11 +3,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <title>About Kai Ahmedi</title>
+
+
   </head>
   <body>
-    {{!> navigation }}
-    <h2></h2>
-    {{!> footer}}
+
+    {{> navbar }}
+
+    <div class="row">
+      <div class="column left" style="background-color: rgba(221, 221, 221, 0.9);">
+        <h2>Hello, I am {{firstName}} {{lastName}},</h2>
+        <img src="{{selfImage.src}}" alt="{{selfImage.name}}" id="selfImage" />
+
+       </div>
+      <div class="column right" style="background-color: rgba(221, 221, 221, 0.75);">
+        <h2>{{contentTextOneHead}}</h2>
+        <p>{{contentTextOneDE}}</p>
+      </div>
+    </div>
+       
+
+    <div class="row">
+      
+      <div class="column left">
+        <h2>{{contentTextTwoHead}}</h2>
+        <p>{{contentTextTwoDE}}</p>
+      </div>
+
+      <div class="column right">
+            <img src="{{divBG.src}}" alt="{{divBG.name}}" id="" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column left" >
+            <img src="{{divBG.src}}" alt="{{divBG.name}}" id="" />
+
+      </div>
+      <div class="column right">
+        <!-- to do CSS for this -->
+        <h2>Contact</h2>
+        <p>Some contact info here...</p>
+        {{> contact}}
+      </div>
+    </div>
+
+    {{> footer}}
+
   </body>
 </html>
+
+
+
+       <!-- <h2>My long story, short.</h2>
+        <p>Amedi ist die Stadt der Träume, den Sternen besonders nah. Meine ganz eigene Reise zu den Sternen begann in dieser Stadt, als ich in ihr geboren wurde.
+          Meine Eltern haben sehr viel erlebt im menschlichen chaos. Ganze Völker wandern bei Krieg. So auch meine Eltern Ismail und Bahar Amedi. 
+          That was 1989, and today 2022 nutze ich den Schatz dieser Erfahrungen um zu erkennen, wie das Leben mich als Mensch lebt.
+        </p>
+        <hr />
+        <h2>Meine Geschichte ist lang...</h2>
+        <p>... und mein Leben dreht sich um das Leben selbst - sprich, darum das eigene Leben und das der anderen zu verstehen.
+  Durch Kunst erfahre ich Erdung, auch wenn ich manchmal nicht weiß, warum wir Menschen überhaupt Dinge tun. 
+  Jeder Pinselstrich erweitert meinen Horizont und lässt mich Neues sehen.
+  Ich messe mich nur an mir selbst in dem Versuch, mich jeden Tag aufs Neue zu übertreffen.</p> -->

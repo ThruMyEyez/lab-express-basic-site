@@ -3,14 +3,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <title>Kai Ahmedi Art</title>
   </head>
   <body>
-    {{!> navigation }}
-    <h1>This page is dedicated to a close friend...</h1>
+    {{> navbar }}
+
+      <div class="heading container">
+        <h2>Welcome to my digital gallery</h2>
+      </div>
+
     <h2>Selfmade art from {{location.city}}, {{location.country}} by {{lastName}}</h2>
-    <img src="{{image.src}}" alt="{{image.name}}" />
+    {{#each images}}
+    <img src="{{src}}" alt="" />
+    {{/each}}
+    {{!}}
+    
+    <header class=".parallax" id="header">
+
+    </header>
+
+    <section class="section" id="recent-work">
+      <h2>My recent work</h2>
+      <!-- div for pictures --> 
+    </section>
     {{! Some drawings here }}
-    {{!> footer}}
+    {{> footer}}
   </body>
 </html>

@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Permanent+Marker&family=Yuji+Boku&display=swap');
+
+:root {
+  --font-title: "Yuji Boku", serif;
+  --font-text: 'Open Sans', sans-serif;
+  --font-heading: "Open Sans", sans-serif;
+  --nav-color: #ccc;
+  --nav-footer-bg-color: rgba(30, 30, 30, 1.0);
+  --page-title-font-size: 42px;
+  /* !!!: redudant */
+  /* --font-heading: "Permanent Marker", cursive; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 300;
+}
+
+/* ???: Navbar Section */
+#nav-fillgap {
+  width: 100vw;
+  height: 60.4px;
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 60.4;
+  padding: 5px 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--nav-footer-bg-color);
+  color: var(--nav-color);
+}
+
+.nav-top .nav-links {
+  margin: auto 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-top .nav-links li {
+  padding: 0px 21px;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.nav-links li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: var(--nav-color);
+}
+
+.nav-links li a:hover {
+  color: white;
+  background-color: #4D4D4D;
+}
+
+#page-title {
+  /*background-color: cadetblue;*/
+  font-family: var(--font-title);
+  font-size: var(--page-title-font-size);
+  margin: 0;
+}
+
+/* ???: Home Section */
+.parallax {
+  /* !!!: todo for HOME */
+}
+
+section {
+  margin: 0px 10vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  font-family: var(--font-text);
+  flex: 1;
+}
+
+.section p {}
+
+/* ??? Footer Section */
+/*
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: cadetblue;
+
+} */
+.footer {
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--nav-footer-bg-color);
+  color: #bababa;
+}
+
+.footer p {
+  float: left;
+  width: 50%;
+  font-size: 18px
+}
+
+.footer p i {
+  color: rgb(207, 38, 38);
+}
+
+.footer ul {
+  float: right;
+  width: 50%;
+  padding: 1rem;
+  margin: 0;
+  text-align: right;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #bababa;
+}
+
+.footer ul li a i {
+  width: 50px;
+  height: 50px;
+  background-color: #4D4D4D;
+  line-height: 50px;
+  font-size: 35px;
+  margin-left: 5px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.footer ul li a i.fa-github:hover {
+  background-color: #c68143;
+}
+
+.footer ul li a i:hover {
+  color: #FFF;
+}
+
+/*
+@media (max-width: 576px) {
+  .footer ul li {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .footer {
+    max-width: 540px
+  }
+
+  .footer ul,
+  .footer p {
+    float: none;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+*/
+/* ???: Works Section */
+
+.heading.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 120px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #c68143;
+}
+
+.heading.container h2 {
+  display: inline;
+}
+
+#workspace .column.left img {
+  width: 100%;
+}
+
+#workspace .column.right img {
+  width: 100%;
+}
+
+/* ???: About Section */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 0px;
+  /* !!!: demo, redudant */
+}
+
+.column h2 {
+  padding: 0 1rem;
+}
+
+.column p {
+  padding: 5px 2rem;
+  font-size: 1.2rem;
+  font-family: var(--font-text);
+}
+
+#selfImage {
+  align-self: center;
+  max-width: 420px;
+  height: auto;
+
+}
+
+/* ???: Contact Container */
+/* !!!: TODO */
+.contact {
+  display: flex;
+  margin: 0 21px;
+}
+
+.contact form {
+  flex-direction: column;
+
+  align-items: center;
+  align-content: center;
+}
+
+.contact button {
+  align-self: flex-end;
+  background-color: var(--nav-footer-bg-color);
+  color: var(--nav-color);
+  font-size: 2rem;
+  margin: 6px 0;
+  padding: 6px 40%;
+  border-radius: 4px;
+}
+
+/* ???: gallery section */
+
+.gallery {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.image-container {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.image-description {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.image-container:hover .transparent-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-container:hover .image-description {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.image-container:hover {
+  cursor: pointer;
+}
+
+.image-description>p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+/* 
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Yuji Boku', serif;
+*/
